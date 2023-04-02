@@ -7,6 +7,7 @@ public class Coinik : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        GameManager.Instance.playPoint();
         GameManager.Instance.UpdateScore();
         Destroy(gameObject);
     }
